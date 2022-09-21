@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Auto format frontendmentor.io style-guide code to SCSS readable format"
+		/>
+		<link
+			rel="shortcut icon"
+			href="assets/img/colors.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>FormatColor</title>
+	</head>
+	<body>
+		<div class="success-msg-con" id="invisible">
+			<p class="success-msg">copied to your clipboard</p>
+		</div>
+		<div class="content">
+			<header>
+				<div class="scss-con cons" data-status="1">
+					<input type="radio" name="scss" id="scss" value="scss" checked />
+					<label for="scss">SCSS</label>
+				</div>
+				<div class="css-con cons">
+					<input type="radio" name="scss" id="css" value="css" />
+					<label for="css">CSS</label>
+				</div>
+			</header>
+			<div class="con">
+				<textarea
+					placeholder="Paste style-guide colors here"
+					spellcheck="false"
+					autocorrect="off"
+					name="input"
+					id="unformatted-string"
+					cols="30"
+					rows="10"
+				></textarea>
+				<p class="error-msg invisible"
+					>Required format: <span>Color name: hsl(x, x%, x%)</span></p
+				>
+			</div>
+			<button>Format</button>
+		</div>
+		<script src="app.js" type="module"></script>
+	</body>
+</html>
