@@ -7,7 +7,7 @@
   -- [Linux](#linux)
   -- [Windows](#windows)
 - [How to use](#how-to-use)
-- [Acknowledgments] (#acknowledgments)
+- [Acknowledgments](#acknowledgments)
 
 ## What is this?
 
@@ -48,14 +48,18 @@ Example output CSS:
 0. Think about an appropriate location on your computer to save this to
 1. Open Terminal
 2. Open appropriate location, copy & paste
-   `git clone https://github.com/waikoo/FormatColors`
+   ```
+   git clone https://github.com/waikoo/FormatColors
+   ```
 3. Open Google Chrome
 4. In the addres bar write
-   `chrome://extensions`
+   ```
+   chrome://extensions
+   ```
 5. Upper right hand corner enable `Developer Mode` by clicking the toggle
-6. Left hand side `Load unpacked`
-7. Navigate to where you downloaded it to
-8. If you want to use it easily, you can pin it by clicking on the Extensions icon next to your address bar and clicking the little pin icon
+6. Upper left hand side `Load unpacked`
+7. Navigate to where you downloaded it
+8. For ease of use, pin it by clicking on the `Extensions` icon next to your address bar and clicking the little pin icon
 
 ### Windows
 
