@@ -6,6 +6,7 @@
 - [How to install](#how-to-install)
   - [Linux](#linux)
   - [Windows](#windows)
+  - [Mac](#mac)
 - [How to use](#how-to-use)
 - [Acknowledgments](#acknowledgments)
 
@@ -64,6 +65,21 @@ Example output CSS:
 ### Windows
 
 ### Mac
+0. Find a location on your computer to save this to
+1. Open your terminal
+2. Open the location, copy & paste
+   ```
+   git clone https://github.com/waikoo/FormatColors
+   ```
+3. Open Google Chrome
+4. In the addres bar write
+   ```
+   chrome://extensions
+   ```
+5. Upper right hand corner enable `Developer Mode` by clicking the toggle
+6. Upper left hand side `Load unpacked`
+7. Navigate to where you downloaded it
+8. For ease of use, pin it by clicking on the `Extensions` icon next to your address bar and clicking the little pin icon
 
 ## How to use
 
