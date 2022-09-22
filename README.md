@@ -4,8 +4,8 @@
 
 - [What is this?](#what-is-this)
 - [How to install](#how-to-install)
-  -- [Linux](#linux)
-  -- [Windows](#windows)
+  - [Linux](#linux)
+  - [Windows](#windows)
 - [How to use](#how-to-use)
 - [Acknowledgments](#acknowledgments)
 
@@ -37,8 +37,8 @@ Example output CSS:
 
 ```css
 --clr-Alabaster: hsl(0, 0%, 98%);
---clr-$GraniteGray: hsl(0, 0%, 41%);
---clr-$EerieBlack: hsl(0, 0%, 8%);
+--clr-GraniteGray: hsl(0, 0%, 41%);
+--clr-EerieBlack: hsl(0, 0%, 8%);
 ```
 
 ## How to install
