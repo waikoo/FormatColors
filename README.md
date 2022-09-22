@@ -27,7 +27,7 @@ to SCSS or CSS readable format by fetching more exact color names from thecolora
 
 Example output SCSS:
 
-```css
+```scss
 $Alabaster: hsl(0, 0%, 98%);
 $GraniteGray: hsl(0, 0%, 41%);
 $EerieBlack: hsl(0, 0%, 8%);
