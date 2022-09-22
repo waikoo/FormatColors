@@ -23,7 +23,7 @@ This is a Chrome extension that converts any numbers of colors given on frontend
 
 ```
 
-to SCSS or CSS readable format by fetching more exact color names from thecolorapi.com API and adding specific prefixes. It extracts only the HSL values from the input field so don't worry about leaving something like ### Neutral inside, it can handle it.
+to SCSS or CSS readable format by fetching more exact color names from thecolorapi.com API and adding specific prefixes. It extracts only the HSL values from the input field so don't worry about leaving something like `### Neutral` inside, it can handle it.
 
 Example output SCSS:
 
