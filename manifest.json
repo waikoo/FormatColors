@@ -4,7 +4,7 @@
 	"version": "0.1",
 	"description": "Transforms FrontendMentor style-guide.md colors to SCSS-readable custom variables ($) so you don't have to do them one by one.",
 	"icons": {
-		"128": "img/colors.png"
+		"128": "assets/img/colors.png"
 	},
 	"browser_action": {
 		"default_icon": "assets/img/colors.png",

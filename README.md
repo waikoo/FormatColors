@@ -1,4 +1,17 @@
-An extension that converts colors given on frontendmentor.io style-guide.md files in the following format:
+**This extension can be useful to you only if you're doing frontendmentor.io challenges**
+
+## Table of contents
+
+- [What is this?](#what-is-this)
+- [How to install](#how-to-install)
+  -- [Linux](#linux)
+  -- [Windows](#windows)
+- [How to use](#how-to-use)
+- [Acknowledgments] (#acknowledgments)
+
+## What is this?
+
+This is a Chrome extension that converts colors given on frontendmentor.io style-guide.md files in the following format:
 
 ```
 
@@ -27,3 +40,28 @@ Example output CSS:
 --clr-$GraniteGray: hsl(0, 0%, 41%);
 --clr-$EerieBlack: hsl(0, 0%, 8%);
 ```
+
+## How to install
+
+### Linux
+
+0. Think about an appropriate location on your computer to save this to
+1. Open Terminal
+2. Open appropriate location, copy & paste
+   `git clone https://github.com/waikoo/FormatColors`
+3. Open Google Chrome
+4. In the addres bar write
+   `chrome://extensions`
+5. Upper right hand corner enable `Developer Mode` by clicking the toggle
+6. Left hand side `Load unpacked`
+7. Navigate to where you downloaded it to
+8. If you want to use it easily, you can pin it by clicking on the Extensions icon next to your address bar and clicking the little pin icon
+
+### Windows
+
+## How to use
+
+## Acknowledgments
+
+Designed by:
+[https://www.dribbble.com/Lyonixa](https://www.dribbble.com/Lyonixa)
