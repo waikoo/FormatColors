@@ -98,6 +98,15 @@ function displayOfflineErrorMsg() {
 	$('.error-msg').classList.remove('invisible');
 }
 
+function displayAlreadyFormattedErrorMsg() {
+	$('.error-msg').innerHTML = `<span>Formatting is already done.</span>`;
+	$('.error-msg').classList.remove('invisible');
+}
+
+function removeAlreadyFormattedErrorMsg() {
+	$('.error-msg').classList.remove('invisible');
+}
+
 function displayMsgOnSuccess() {
 	$('.success-msg-con').id = '';
 	$('.success-msg-con').setAttribute('closing', '');
@@ -120,7 +129,22 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	// convert string on click
-	$('button').addEventListener('click', startConversion);
+	$('button').addEventListener('click', () => {
+		const includesSCSS = $('#unformatted-string').value.includes('$');
+		const includesCSS = $('#unformatted-string').value.includes('--clr-');
+		if ($('.scss-con').dataset.status === '1' && !includesSCSS) {
+			startConversion();
+		}
+		if ($('.scss-con').dataset.status === '1' && includesSCSS) {
+			displayAlreadyFormattedErrorMsg();
+		}
+		if ($('.scss-con').dataset.status === '0' && !includesCSS) {
+			startConversion();
+		}
+		if ($('.scss-con').dataset.status === '0' && includesCSS) {
+			displayAlreadyFormattedErrorMsg();
+		}
+	});
 
 	// log promise rejection
 	window.addEventListener('unhandledrejection', promiseRejectionEvent => {
