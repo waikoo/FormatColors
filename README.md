@@ -11,7 +11,7 @@
 
 ## What is this?
 
-This is a Chrome extension that converts colors given on frontendmentor.io style-guide.md files in the following format:
+This is a Chrome extension that converts any numbers of colors given on frontendmentor.io style-guide.md files in the following format:
 
 ```
 
@@ -23,7 +23,7 @@ This is a Chrome extension that converts colors given on frontendmentor.io style
 
 ```
 
-to SCSS or CSS readable format by fetching more exact color names from thecolorapi.com API and adding specific prefixes.
+to SCSS or CSS readable format by fetching more exact color names from thecolorapi.com API and adding specific prefixes. It extracts only the HSL values from the input field so don't worry about leaving something like ### Neutral inside, it can handle it.
 
 Example output SCSS:
 
