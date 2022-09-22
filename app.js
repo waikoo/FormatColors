@@ -2,6 +2,12 @@ function $(selector) {
 	return document.querySelector(selector);
 }
 
+$('#unformatted-string').value = `### Neutral
+
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%)a`;
+
 function getHSLArray(str) {
 	const noLineBreaks = str.replace(/(\r\n|\n|\r)/gm, ''); // removes all 3 types of newline characters
 	const hslArray = noLineBreaks.match(/hsl\(\d+,( |  )\d+%, \d+%\)/g); // hsl values from string to array
@@ -36,17 +42,13 @@ async function fetchAColor(color) {
 }
 
 function setObjectColors(object, key, value) {
-	console.log(object);
-	console.log(key);
-	console.log(value);
-
-	// modify prefix based on scss.status being 1 or 0
+	// modify output prefix based on scss.status being 1 or 0
 	if ($('.scss-con').dataset.status === '1') {
 		object['$' + key.replace(' ', '')] = value + ';';
 	}
 
-	if ($('.css-con').dataset.status === '0') {
-		object['--clr-' + key?.replace(' ', '')] = value + ';';
+	if ($('.scss-con').dataset.status === '0') {
+		object['--clr-' + key.replace(' ', '')] = value + ';';
 	}
 }
 
