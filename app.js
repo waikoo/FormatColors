@@ -2,12 +2,6 @@ function $(selector) {
 	return document.querySelector(selector);
 }
 
-$('#unformatted-string').value = `### Neutral
-
-- Almost White: hsl(0, 0%, 98%)
-- Medium Gray: hsl(0, 0%, 41%)
-- Almost Black: hsl(0, 0%, 8%)a`;
-
 function getHSLArray(str) {
 	const noLineBreaks = str.replace(/(\r\n|\n|\r)/gm, ''); // removes all 3 types of newline characters
 	const hslArray = noLineBreaks.match(/hsl\(\d+,( |  )\d+%, \d+%\)/g); // hsl values from string to array
