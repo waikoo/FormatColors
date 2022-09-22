@@ -63,6 +63,8 @@ Example output CSS:
 
 ### Windows
 
+### Mac
+
 ## How to use
 
 ## Acknowledgments
