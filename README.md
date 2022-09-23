@@ -1,5 +1,7 @@
 **This extension can be useful to you only if you're doing frontendmentor.io challenges**
 
+![](.assets/images/screenshot.png)
+
 ## Table of contents
 
 - [What is this?](#what-is-this)
