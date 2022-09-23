@@ -1,6 +1,6 @@
 **This extension can be useful to you only if you're doing frontendmentor.io challenges**
 
-![](.assets/images/screenshot.png)
+![](assets/img/screenshot.png)
 
 ## Table of contents
 
