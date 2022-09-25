@@ -36,13 +36,14 @@ async function fetchAColor(color) {
 }
 
 function setObjectColors(object, key, value) {
+	const newKey = key.replace(/\s+/g, ''); // deletes any number of white space from fetched color name
 	// modify output prefix based on scss.status being 1 or 0
 	if ($('.scss-con').dataset.status === '1') {
-		object['$' + key.replace(' ', '')] = value + ';';
+		object['$' + newKey] = value + ';';
 	}
 
 	if ($('.scss-con').dataset.status === '0') {
-		object['--clr-' + key.replace(' ', '')] = value + ';';
+		object['--clr-' + newKey] = value + ';';
 	}
 }
 
